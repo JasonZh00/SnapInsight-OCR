@@ -1,0 +1,17 @@
+<!--pages/camera/camera.wxml-->
+<view class="indexContainer">
+  <camera device-position="front" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+  <view class="navContainer">
+      <button type="primary" plain="true" bindtap="takePhoto">拍摄图片</button>
+      <button type="primary" plain="true" bindtap="choosePhoto">上传图片</button>
+  </view>
+  <view>预览效果:
+    <!--<image mode="widthFix" src="{{src}}"></image>-->
+    <canvas class='canvas' style="width:{{canvasWidth}}px;height:{{canvasHeight}}px;top:0px;" canvas-id="firstCanvas"></canvas>
+  </view>
+  <view>识别结果:</view>
+  <!--<view wx:for="{{list}}" wx:key="list">
+    <view>{{item.data}}</view>
+  </view>-->
+  <view>{{list}}</view>
+</view>

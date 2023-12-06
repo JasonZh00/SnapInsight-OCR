@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/camera/camera",
+    "pages/index/index",
+    "pages/storage/storage"
+  ],
+  "permission":{
+    "scope.userLocation": {
+      "desc":"提取你的位置信息"
+    }
+  },
+  "requirePrivateInfos":[
+    "getLocation"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "window": {
+    "navigationBarBackgroundColor": "#0CA82B",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "OCR图像识别"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#0CA82B",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/camera/camera",
+        "text": "图像识别",
+        "iconPath": "/static/images/tabs/tab-my.png",
+        "selectedIconPath": "/static/images/tabs/tab-my-current.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "个人信息",
+        "iconPath": "/static/images/tabs/tab-my.png",
+        "selectedIconPath": "/static/images/tabs/tab-my-current.png"
+      }
+    ]
+  }
+}
